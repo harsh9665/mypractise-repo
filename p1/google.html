@@ -1,108 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        
-        <!--meta data documentation for our page  -->  
-        <meta charset="UTF-8">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Google</title>
-        
-        <link rel="stylesheet" href="googlestyle.css">
-        
-        <link rel="icons" href="https://www.google.com/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#202124] text-white min-h-screen flex flex-col justify-between">
+    <!-- Top Nav -->
+    <header class="flex items-center justify-between px-4 py-3 text-sm">
+      <!-- Left Links -->
+      <div class="flex space-x-4">
+        <a href="#" class="hover:underline text-white">About</a>
+        <a href="#" class="hover:underline text-white">Store</a>
+      </div>
 
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-        
-
-    </head>
-    <body>
-        <!-- -->
-          <!-- navigation links-->
-           <header>
-            <nav>
-                   <!-- left links-->
-                    <div class="nav-left">
-                        <a href="#">About</a>
-                        <a href="#">Store</a>
-                    </div>
-                    <!-- right links-->
-                    <div class="nav-right">
-                        <a href="#">Gmail</a>
-                        <a href="#">Images</a>
-                        <!---app icons -->
-                    <a href="#" class="app-icon-link" aria-label="Google apps">
-                    <img src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="Google Apps" class="apps-icon-img">
-                    </a>
-
-                <button class="sign-in-button">sign in</button>
-                    
-                    </div>
-            </nav>
-
-           </header>
-            <!-- Main content-->
-             <main>
-
-                 <div class="google-logo">
-                  <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="Google Logo">
-        
-                </div>
-
-                <!-- Search container -->
-                <div class="search-container">
-                        <div class="search-input-wrapper">
-                            <!-- Search Icon -->
-                           <div class="search-icon">
-                                 <img src="https://www.google.com/images/icons/material/system/1x/search_white_24dp.png" alt="Search">
-                            </div>
-
-                            <!-- Search Input Field -->
-                             <input type="text" class="search-input" aria-label="Search">
-                              <!-- Microphone Icon -->
-                            <div class="mic-icon">
-                            <img src="https://www.google.com/images/icons/material/system/1x/mic_white_24dp.png" alt="Mic">
-                            </div>
-                             <!-- glens Icon -->
-                             <!-- Google Lens Icon -->
-                           <div class="lens-icon">
-                           <img src="images/Google_Lens_Icon.svg.png" alt="Google Lens">
-                            </div>
+      <!-- Right Links -->
+      <div class="flex items-center space-x-4">
+        <div class="flex space-x-4">
+        <a href="#" class="hover:underline text-white">Gmail</a>
+        <a href="#" class="hover:underline text-white">Images</a>
+        </div>
 
 
-                        </div>
-                        <!-- Search Buttons -->
-                         <div class="search-buttons">
-                            <button>Google Search</button>
-                            <button>I'm Feeling Lucky</button>
-                        </div>
-                        <!-- Language Options -->
-                         <div class="language-options">
-                            Google Offered in:<a href="#">हिन्दी</a> <a href="#">বাংলা</a> <a href="#">తెలుగు</a> <a href="#">मराठी</a> <a href="#">தமிழ்</a> <a href="#">ગુજરાતી</a> <a href="#">ಕನ್ನಡ</a> <a href="#">മലയാളം</a> <a href="#">ਪੰਜਾਬੀ</a>
-                         </div>
-                </div>
+        <!-- Apps Icon (9 dots) -->
+         <div class="flex items-center space-x-2">
+        <div class="w-10 h-10 flex items-center justify-center hover:bg-[#3c4043] rounded-full cursor-pointer">
+        <img src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="Google Apps" class="w-6 h-6 invert" />
 
-             </main>
+        </div>
 
-            <!-- Footer section -->
-             <footer>
-                <div class="footer-country">India</div>
+        <!-- Sign In Button -->
+        <button class="bg-[#7dd3fc] text-black text-sm px-4 py-1.5 rounded-full hover:brightness-110">Sign in</button>
+        </div>
+    </div>
+    </header>
 
-                 <!-- Footer navigation links -->
-                <div class="footer-links">
+    <!-- Main Content -->
+    <main class="flex flex-col items-center justify-center flex-1 text-center px-4">
+      <!-- Google Logo -->
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="Google Logo" class="w-[272px] h-auto mb-8" />
 
-                        <div class="footer-left">
-                            <a href="#">Advertising</a>
-                            <a href="#">Business</a>
-                            <a href="#">How Search works</a>
-                        </div>
-                        <div class="footer-right">
-                            <a href="#">Privacy</a>
-                            <a href="#">Terms</a>
-                            <a href="#">Settings</a>
-                        </div>
-                </div>
+     <!-- Search Box -->
+        <div class="flex items-center w-full max-w-xl bg-[#303134] border border-[#5f6368] rounded-full px-4 py-2 text-gray-300 focus-within:border-blue-500">
+  
+    <!-- Search Icon -->
+        <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/search_gm_grey_24dp.png" alt="Search" class="w-5 h-5 mr-3" />
 
-             </footer>
-    </body>
+
+    <!-- Input -->
+        <input type="text" class="flex-1 bg-transparent focus:outline-none text-white" />
+
+    <!-- Microphone Icon -->
+        <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/mic_gm_grey_24dp.png" alt="Mic" class="w-5 h-5 mx-2 cursor-pointer" />
+
+
+    <!-- Google Lens Icon -->
+        <img src="images/Google_Lens_Icon.svg.png" alt="Lens" class="w-5 h-5 cursor-pointer" />
+
+
+        </div>
+
+      <!-- Buttons -->
+      <div class="flex gap-4 mt-8">
+        <button class="bg-[#303134] text-sm text-gray-200 px-4 py-2 rounded hover:border hover:border-gray-500">Google Search</button>
+        <button class="bg-[#303134] text-sm text-gray-200 px-4 py-2 rounded hover:border hover:border-gray-500">I'm Feeling Lucky</button>
+      </div>
+
+      <!-- Language Links -->
+      <p class="text-gray-400 text-sm mt-6">
+        Google offered in:
+        <a href="#" class="text-blue-400 hover:underline">हिन्दी</a>
+        <a href="#" class="text-blue-400 hover:underline">తెలుగు</a>
+        <a href="#" class="text-blue-400 hover:underline">मराठी</a>
+        <a href="#" class="text-blue-400 hover:underline">தமிழ்</a>
+        <a href="#" class="text-blue-400 hover:underline">ગુજરાતી</a>
+        <a href="#" class="text-blue-400 hover:underline">ಕನ್ನಡ</a>
+        <a href="#" class="text-blue-400 hover:underline">മലയാളം</a>
+        <a href="#" class="text-blue-400 hover:underline">ਪੰਜਾਬੀ</a>
+      </p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#171717] text-white text-sm">
+      <div class="border-b border-[#3c4043] px-6 py-3">India</div>
+      <div class="flex flex-col md:flex-row justify-between px-8 py-3 space-y-2 md:space-y-0">
+        <div class="flex space-x-6">
+          <a href="#" class="hover:underline">Advertising</a>
+          <a href="#" class="hover:underline">Business</a>
+          <a href="#" class="hover:underline">How Search works</a>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:underline">Privacy</a>
+          <a href="#" class="hover:underline">Terms</a>
+          <a href="#" class="hover:underline">Settings</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
